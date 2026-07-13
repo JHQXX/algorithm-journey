@@ -68,7 +68,15 @@ public class LinkedLIst<E> implements List<E>{
         if (o == null){
             for (Node<E> x = first ; x != null ; x = x.next){
                 if (x.data == null){
-
+                    unlink(x);
+                    return true;
+                }
+            }
+        }else {
+            for (Node<E> x = first ; x != null ; x = x.next){
+                if (o.equals(x.data)){
+                    unlink(x);
+                    return true;
                 }
             }
         }
@@ -103,14 +111,40 @@ public class LinkedLIst<E> implements List<E>{
 
     @Override
     public E get(int index) {
-        return null;
+        return node(index).data;
     }
 
     @Override
     public void printLinkList() {
-
+        if (this.size == 0){
+            System.out.println("list is empty");
+        }else {
+            Node<E> temp = first;
+            System.out.println("目前列表 ，节点头:" + first.data + "尾节点:"+last.data + "整体:");
+            while (temp.next != null){
+                System.out.println(temp.data + ",");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
     }
 
+    Node<E> node(int index){
+        //判断index的位置
+        Node<E> x;
+        if (index < (size>>1)){
+            x = first;
+            for (int i = 0 ; i < index ; i++){
+                x = x.next;
+            }
+        }else {
+            x = last;
+            for (int i = size-1 ; i > index ; i--){
+                x = x.prev;
+            }
+        }
+        return x;
+    }
 
     /**
      * ?表示不确定的Java类型
