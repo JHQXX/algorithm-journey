@@ -44,6 +44,7 @@ public class HashMap02BySeparateChaining <K,V> implements Map<K,V>{
                 }
             }
         }
+        return null;
     }
 
 
