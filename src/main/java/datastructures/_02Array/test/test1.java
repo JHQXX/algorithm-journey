@@ -1,6 +1,7 @@
 package datastructures._02Array.test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author jhqxx 梦想成为工程师的人
@@ -9,20 +10,9 @@ import java.util.ArrayList;
  */
 public class test1 {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("a");
-        strings.add("b");
-        strings.add("c");
-        strings.add("d");
-        strings.add("e");
-        strings.add("f");
-        strings.add("g");
-
-
-        String remove = strings.remove(2);
-        for (String string : strings) {
-            System.out.println(string);
-        }
+        List<Object> objects = new ArrayList<>();
+        ArrayList<Object> objects1 = new ArrayList<>(objects);
+        ArrayList<String> strings = new ArrayList<>(3);
 
 
     }
