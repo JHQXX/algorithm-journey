@@ -1,5 +1,6 @@
 package datastructures._01Link_List.test;
 
+import java.math.BigDecimal;
 import java.util.LinkedList;
 
 /**
@@ -11,6 +12,5 @@ public class test1 {
     public static void main(String[] args) {
         LinkedList<String>  a = new LinkedList<>();
         a.add("s");
-
     }
 }
