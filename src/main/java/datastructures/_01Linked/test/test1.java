@@ -1,6 +1,5 @@
-package datastructures._01Link_List.test;
+package datastructures._01Linked.test;
 
-import java.math.BigDecimal;
 import java.util.LinkedList;
 
 /**

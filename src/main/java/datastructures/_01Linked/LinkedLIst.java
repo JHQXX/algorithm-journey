@@ -1,4 +1,4 @@
-package datastructures._01Link_List;
+package datastructures._01Linked;
 
 
 /**

@@ -1,4 +1,4 @@
-package datastructures._01Link_List;
+package datastructures._01Linked;
 
 /**
  * @author jhqxx 梦想成为工程师的人
