@@ -11,8 +11,13 @@ import java.util.List;
 public class test1 {
     public static void main(String[] args) {
         List<Object> objects = new ArrayList<>();
-        ArrayList<Object> objects1 = new ArrayList<>(objects);
+
         ArrayList<String> strings = new ArrayList<>(3);
+        strings.add("a");
+        strings.add("b");
+        strings.add("c");
+        String s = strings.get(strings.size()-1);
+        System.out.println(s);
 
 
     }
